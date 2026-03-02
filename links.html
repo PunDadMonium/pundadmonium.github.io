@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pun Dad Monium - Links</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+        .profile img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px solid #e94560;
+            margin-bottom: 16px;
+        }
+        .profile h1 {
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+        .profile h1 span { color: #e94560; }
+        .profile p {
+            color: #999;
+            font-size: 0.95rem;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .links {
+            width: 100%;
+            max-width: 400px;
+            padding: 24px 20px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            padding: 16px 20px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 14px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .link-btn:hover {
+            background: rgba(255,255,255,0.14);
+            border-color: #e94560;
+            transform: translateY(-2px);
+        }
+        .link-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        .link-btn .sub { color: #888; font-weight: 400; font-size: 0.8rem; }
+        .etsy { background: #f56400; }
+        .tiktok { background: #000; border: 1px solid #333; }
+        .shopify { background: #96bf48; }
+        .x-tw { background: #000; border: 1px solid #333; }
+        .website { background: #e94560; }
+        footer {
+            padding: 30px;
+            color: #444;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="https://pundadmonium.github.io/x_profile.png" alt="Pun Dad Monium">
+        <h1>Pun <span>Dad</span> Monium</h1>
+        <p>Dad jokes too good to keep quiet. Original pun apparel for the proudly corny.</p>
+    </div>
+
+    <div class="links">
+        <a href="ETSY_LINK_HERE" target="_blank" class="link-btn">
+            <div class="link-icon etsy">E</div>
+            <div>Shop on Etsy<br><span class="sub">T-shirts, hoodies, hats & mugs</span></div>
+        </a>
+
+        <a href="TIKTOK_SHOP_LINK_HERE" target="_blank" class="link-btn">
+            <div class="link-icon tiktok">T</div>
+            <div>TikTok Shop<br><span class="sub">Shop while you scroll</span></div>
+        </a>
+
+        <a href="SHOPIFY_LINK_HERE" target="_blank" class="link-btn">
+            <div class="link-icon shopify">S</div>
+            <div>Shopify Store<br><span class="sub">Full catalog + exclusives</span></div>
+        </a>
+
+        <a href="https://x.com/pundadmonium" target="_blank" class="link-btn">
+            <div class="link-icon x-tw">X</div>
+            <div>Follow on X<br><span class="sub">Daily puns & new drops</span></div>
+        </a>
+
+        <a href="https://pundadmonium.github.io" class="link-btn">
+            <div class="link-icon website">W</div>
+            <div>Website<br><span class="sub">pundadmonium.github.io</span></div>
+        </a>
+    </div>
+
+    <footer>&copy; 2026 Pun Dad Monium</footer>
+</body>
+</html>

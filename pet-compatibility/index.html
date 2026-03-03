@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawMatch - Pet Compatibility Score</title>
+  <meta name="description" content="Find out how compatible you are with your pet! Take our fun quiz and get your PawMatch score.">
+  <meta property="og:title" content="PawMatch - Pet Compatibility Score">
+  <meta property="og:description" content="Find out how compatible you are with your pet!">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Landing Screen -->
+    <section id="screen-landing" class="screen active">
+      <div class="container">
+        <div class="logo">
+          <span class="logo-icon">🐾</span>
+          <h1>PawMatch</h1>
+        </div>
+        <p class="tagline">Discover your true compatibility with your pet</p>
+        <p class="subtitle">Answer a few fun questions and we'll calculate your PawMatch score!</p>
+        <button id="btn-start" class="btn btn-primary btn-lg">Take the Quiz</button>
+        <p class="quiz-meta">🕐 2 minutes · 12 questions · 100% free</p>
+
+        <!-- Ad Slot: Landing Banner -->
+        <div class="ad-slot" data-slot="landing-banner">
+          <span class="ad-label">Advertisement</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Screen -->
+    <section id="screen-quiz" class="screen">
+      <div class="container">
+        <div class="quiz-header">
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+          <span id="progress-text" class="progress-text">1 / 12</span>
+        </div>
+
+        <div id="question-container" class="question-container">
+          <!-- Dynamically populated -->
+        </div>
+
+        <div class="quiz-nav">
+          <button id="btn-back" class="btn btn-secondary" disabled>Back</button>
+          <button id="btn-next" class="btn btn-primary" disabled>Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loading / Calculating Screen -->
+    <section id="screen-loading" class="screen">
+      <div class="container center">
+        <div class="spinner"></div>
+        <p class="loading-text">Calculating your PawMatch score...</p>
+        <p class="loading-sub">Analyzing personality traits, lifestyle habits, and bond strength</p>
+      </div>
+    </section>
+
+    <!-- Results Screen -->
+    <section id="screen-results" class="screen">
+      <div class="container center">
+        <h2 class="results-title">Your PawMatch Score</h2>
+
+        <div class="score-ring">
+          <svg viewBox="0 0 200 200">
+            <circle class="ring-bg" cx="100" cy="100" r="88" />
+            <circle id="ring-progress" class="ring-fg" cx="100" cy="100" r="88" />
+          </svg>
+          <div class="score-value">
+            <span id="score-number">0</span>
+            <span class="score-percent">%</span>
+          </div>
+        </div>
+
+        <p id="score-label" class="score-label"></p>
+        <p id="score-description" class="score-description"></p>
+
+        <div id="breakdown" class="breakdown">
+          <!-- Dynamically populated -->
+        </div>
+
+        <!-- Ad Slot: Results Banner -->
+        <div class="ad-slot" data-slot="results-banner">
+          <span class="ad-label">Advertisement</span>
+        </div>
+
+        <div class="results-actions">
+          <button id="btn-share" class="btn btn-primary">Share My Score</button>
+          <button id="btn-retake" class="btn btn-secondary">Retake Quiz</button>
+        </div>
+
+        <!-- Email Capture for Monetization -->
+        <div id="email-capture" class="email-capture">
+          <h3>Want personalized tips to strengthen your bond?</h3>
+          <p>Get a free detailed compatibility report sent to your inbox.</p>
+          <form id="email-form" class="email-form">
+            <input type="email" id="email-input" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn-accent">Get Free Report</button>
+          </form>
+          <p id="email-success" class="email-success hidden">Thanks! Check your inbox soon.</p>
+        </div>
+
+        <!-- Premium Upsell -->
+        <div class="premium-card">
+          <div class="premium-badge">PRO</div>
+          <h3>Unlock Your Full Compatibility Report</h3>
+          <ul>
+            <li>Detailed trait-by-trait analysis</li>
+            <li>Personalized bonding activity plan</li>
+            <li>Training tips based on your match</li>
+            <li>Monthly compatibility check-ins</li>
+          </ul>
+          <button id="btn-premium" class="btn btn-premium">Get Full Report — $4.99</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 PawMatch. All rights reserved.</p>
+      <nav>
+        <a href="../privacy.html">Privacy</a>
+        <a href="../terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
